@@ -1,0 +1,4 @@
+interface RecognitionService{
+	long getModelID();
+	void setModelID(in long ModelID);
+};

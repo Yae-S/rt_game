@@ -1,0 +1,256 @@
+// -*- C++ -*-
+/*!
+ * @file  Main_comp.cpp
+ * @brief ModuleDescription
+ * @date $Date$
+ *
+ * $Id$
+ */
+
+#include "Main_comp.h"
+
+// Module specification
+// <rtc-template block="module_spec">
+static const char* main_comp_spec[] =
+  {
+    "implementation_id", "Main_comp",
+    "type_name",         "Main_comp",
+    "description",       "ModuleDescription",
+    "version",           "1.0.0",
+    "vendor",            "VenderName",
+    "category",          "Category",
+    "activity_type",     "PERIODIC",
+    "kind",              "DataFlowComponent",
+    "max_instance",      "1",
+    "language",          "C++",
+    "lang_type",         "compile",
+    // Configuration variables
+    "conf.default.test_conf_1", "-1",
+    "conf.default.test_conf_2", "-1",
+    "conf.default.test_conf_3", "-1",
+    "conf.default.test_conf_4", "-1",
+    // Widget
+    "conf.__widget__.test_conf_1", "text",
+    "conf.__widget__.test_conf_2", "text",
+    "conf.__widget__.test_conf_3", "text",
+    "conf.__widget__.test_conf_4", "text",
+    // Constraints
+    ""
+  };
+// </rtc-template>
+
+/*!
+ * @brief constructor
+ * @param manager Maneger Object
+ */
+Main_comp::Main_comp(RTC::Manager* manager)
+    // <rtc-template block="initializer">
+  : RTC::DataFlowComponentBase(manager),
+    m_main_inIn("main_in", m_main_in),
+    m_main_outOut("main_out", m_main_out)
+
+    // </rtc-template>
+{
+}
+
+/*!
+ * @brief destructor
+ */
+Main_comp::~Main_comp()
+{
+}
+
+
+
+RTC::ReturnCode_t Main_comp::onInitialize()
+{
+  // Registration: InPort/OutPort/Service
+  // <rtc-template block="registration">
+  // Set InPort buffers
+  addInPort("main_in", m_main_inIn);
+  
+  // Set OutPort buffer
+  addOutPort("main_out", m_main_outOut);
+  
+  // Set service provider to Ports
+  
+  // Set service consumers to Ports
+  
+  // Set CORBA Service Ports
+  
+  // </rtc-template>
+
+  // <rtc-template block="bind_config">
+  // Bind variables and configuration variable
+  bindParameter("test_conf_1", m_test_conf_1, "-1");
+  bindParameter("test_conf_2", m_test_conf_2, "-1");
+  bindParameter("test_conf_3", m_test_conf_3, "-1");
+  bindParameter("test_conf_4", m_test_conf_4, "-1");
+  
+  // </rtc-template>
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t Main_comp::onFinalize()
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onStartup(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onShutdown(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onActivated(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onDeactivated(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+
+RTC::ReturnCode_t Main_comp::onExecute(RTC::UniqueId ec_id)
+{
+	int TF01=5,TF02=7; //アニメーションコンポーネントから渡される罠情報.T(トラップ)F(フラグ).(仮)
+
+	int edge_in=-1,edge_out=-1; //部分エッジ画像認識コンポーネントの入力ポート,出力ポート.(仮) 
+	int sound_in=-1,soundj_out=-1; //音声認識コンポーネントの入力ポート,音声判断コンポーネントの出力ポート.(仮)
+
+	std::cout<<"Start Main Program"<<std::endl;
+
+	m_main_out.data=0; //アニメーションコマンド-0,アニメーションスタート.
+
+	std::cout<<m_main_out.data<<std::endl;
+
+	m_main_outOut.write(); //出力ポートに書き込み.	
+
+
+	if(m_main_inIn.isNew()){ //入力ポートの検出.
+		m_main_inIn.read(); //データ読み込み.
+
+		if(m_main_in.data==9){ //アニメーションコンポーネントからのレスポンス.待機状態へ.
+
+			while(1){ //アニメーションコンポーネントからのコマンド待ち.
+
+				std::cout<<"Animation Start,Loop on"<<std::endl;
+
+				if(m_main_inIn.isNew()){ //入力ポートの検出.
+					m_main_inIn.read(); //データ読み込み.
+
+					if(m_main_in.data==TF01){ //そのデータがどの罠か判断.将来的に関数化.
+
+						edge_in=1; //画像コンポーネントに命令.(仮)
+
+						if(edge_out==m_test_conf_1){ //画像認識が成功していた場合.
+							m_main_out.data=1; //アニメーションコマンド-1,メイン変化なし.背景差し替え.
+							m_main_outOut.write(); //出力ポートに書き込み.
+
+							std::cout<<"Animation Command-1 "<<std::endl;
+
+						}
+						else if(edge_out==m_test_conf_2){ //画像認識が失敗していた場合.
+							m_main_out.data=3; //アニメーションコマンド-3,障害回避失敗.
+							m_main_outOut.write(); //出力ポートに書き込み.	
+
+							std::cout<<"Animation Command-3 "<<std::endl;
+
+							return RTC::RTC_OK; //ループを抜けてプログラム終了へ.
+						}
+					}
+
+					else if(m_main_in.data==TF02){ //罠判断.音声パターン.
+						sound_in=1; //音声認識コンポーネントに命令.受けた音声コンポーネントは判断コンポーネントへ投げて,そちらがメインに結果を戻す.
+						if(soundj_out==1){ //画像認識が成功していた場合.
+							m_main_out.data=2; //アニメーションコマンド-2,キャラクター差し替え.
+							m_main_outOut.write(); //出力ポートに書き込み.
+
+							std::cout<<"Animation Command-2 "<<std::endl;
+
+						}
+						else if(soundj_out==0){ //音声認識が失敗していた場合.
+							m_main_out.data=3; //アニメーションコマンド-3,障害回避失敗.
+							m_main_outOut.write(); //出力ポートに書き込み.
+
+							std::cout<<"Animation Command-3 "<<std::endl;
+
+							return RTC::RTC_OK; //ループを抜けてプログラム終了へ.
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t Main_comp::onAborting(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onError(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onReset(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onStateUpdate(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t Main_comp::onRateChanged(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+
+
+extern "C"
+{
+ 
+  void Main_compInit(RTC::Manager* manager)
+  {
+    coil::Properties profile(main_comp_spec);
+    manager->registerFactory(profile,
+                             RTC::Create<Main_comp>,
+                             RTC::Delete<Main_comp>);
+  }
+  
+};
+
+
