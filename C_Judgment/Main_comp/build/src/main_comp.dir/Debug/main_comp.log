@@ -1,0 +1,88 @@
+﻿2013/11/22 19:43:46 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\y10140\workspace\Main_comp\build\src\main_comp.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "main_comp.dir\Debug\main_comp.unsuccessfulbuild" を作成しています。
+       CustomBuild:
+         すべての出力が最新のものです。
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:/Users/y10140/workspace/Main_comp/include /IC:/Users/y10140/workspace/Main_comp/include/Main_comp /IC:/Users/y10140/workspace/Main_comp/build /IC:/Users/y10140/workspace/Main_comp/build/idl /I"C:/Program Files/OpenRTM-aist/1.1" /I"C:/Program Files/OpenRTM-aist/1.1/rtm/idl" /I"C:/Program Files/OpenRTM-aist/1.1/omniORB/4.1.5/include" /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D INCLUDE_stub_in_nt_dll /D RTC_CORBA_CXXMAPPING11 /D _WIN32_WINNT=0x0500 /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Debug\"" /D main_comp_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"main_comp.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/src/Debug/main_comp.pdb" /Gd /TP /analyze- /errorReport:prompt C:\Users\y10140\workspace\Main_comp\src\Main_comp.cpp  /Zm1000 
+         Main_comp.cpp
+     1>C:\Program Files\OpenRTM-aist\1.1\rtm/InPortBase.h(599): warning C4290: C++ の例外の指定は無視されます。関数が __declspec(nothrow) でないことのみ表示されます。
+     1>C:\Program Files\OpenRTM-aist\1.1\rtm/InPortConsumer.h(258): warning C4231: 非標準の拡張機能が使用されています : 'extern' がテンプレートの明示的なインスタンス生成の前に見つかりました。
+     1>C:\Program Files\OpenRTM-aist\1.1\coil/Factory.h(424): warning C4251: 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>::m_creators' : class 'std::map<_Kty,_Ty>' は __export キーワードを使って class 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>' にエクスポートしてください。
+                 with
+                 [
+                     AbstractClass=RTC::InPortConsumer,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::InPortConsumer *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::InPortConsumer *&)
+                 ]
+                 and
+                 [
+                     _Kty=std::string,
+                     _Ty=coil::Factory<RTC::InPortConsumer,std::string,std::less<std::string>,RTC::InPortConsumer *(__cdecl *)(void),void (__cdecl *)(RTC::InPortConsumer *&)>::FactoryEntry
+                 ]
+                 and
+                 [
+                     AbstractClass=RTC::InPortConsumer,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::InPortConsumer *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::InPortConsumer *&)
+                 ]
+                 C:\Program Files\OpenRTM-aist\1.1\rtm/InPortConsumer.h(258) : コンパイルされたクラスの テンプレート のインスタンス化 'coil::GlobalFactory<AbstractClass>' の参照を確認してください
+                 with
+                 [
+                     AbstractClass=RTC::InPortConsumer
+                 ]
+     1>C:\Program Files\OpenRTM-aist\1.1\rtm/OutPortProvider.h(551): warning C4231: 非標準の拡張機能が使用されています : 'extern' がテンプレートの明示的なインスタンス生成の前に見つかりました。
+     1>C:\Program Files\OpenRTM-aist\1.1\coil/Factory.h(424): warning C4251: 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>::m_creators' : class 'std::map<_Kty,_Ty>' は __export キーワードを使って class 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>' にエクスポートしてください。
+                 with
+                 [
+                     AbstractClass=RTC::OutPortProvider,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::OutPortProvider *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::OutPortProvider *&)
+                 ]
+                 and
+                 [
+                     _Kty=std::string,
+                     _Ty=coil::Factory<RTC::OutPortProvider,std::string,std::less<std::string>,RTC::OutPortProvider *(__cdecl *)(void),void (__cdecl *)(RTC::OutPortProvider *&)>::FactoryEntry
+                 ]
+                 and
+                 [
+                     AbstractClass=RTC::OutPortProvider,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::OutPortProvider *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::OutPortProvider *&)
+                 ]
+                 C:\Program Files\OpenRTM-aist\1.1\rtm/OutPortProvider.h(551) : コンパイルされたクラスの テンプレート のインスタンス化 'coil::GlobalFactory<AbstractClass>' の参照を確認してください
+                 with
+                 [
+                     AbstractClass=RTC::OutPortProvider
+                 ]
+     1>C:\Program Files\OpenRTM-aist\1.1\rtm/OutPortBase.h(777): warning C4290: C++ の例外の指定は無視されます。関数が __declspec(nothrow) でないことのみ表示されます。
+       ManifestResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\y10140\workspace\Main_comp\build\src\Debug\main_comp.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:/Program Files/OpenRTM-aist/1.1/bin" /LIBPATH:"C:/Program Files/OpenRTM-aist/1.1/bin/Debug" /LIBPATH:"C:/Program Files/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32" /LIBPATH:"C:/Program Files/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/Debug" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib RTC110d.lib coil110d.lib omniORB415_rtd.lib omniDynamic415_rtd.lib omnithread34_rtd.lib advapi32.lib ws2_32.lib mswsock.lib /MANIFEST /ManifestFile:"main_comp.dir\Debug\main_comp.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/src/Debug/main_comp.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/src/Debug/main_comp.lib" /MACHINE:X86 /DLL main_comp.dir\Debug\main_comp.dll.embed.manifest.res
+         main_comp.dir\Debug\Main_comp.obj
+         main_comp.dir\Debug\RecognitionServiceSK.obj
+         main_comp.dir\Debug\RecognitionServiceDynSK.obj  /machine:X86 /debug 
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"main_comp.dir\Debug\main_comp.dll.embed.manifest" /manifest main_comp.dir\Debug\main_comp.dll.intermediate.manifest
+         すべての出力が最新のものです。
+       LinkEmbedManifest:
+         すべての出力が最新のものです。
+         main_comp.vcxproj -> C:\Users\y10140\workspace\Main_comp\build\src\Debug\main_comp.dll
+       FinalizeBuildStatus:
+         ファイル "main_comp.dir\Debug\main_comp.unsuccessfulbuild" を削除しています。
+         "main_comp.dir\Debug\main_comp.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\y10140\workspace\Main_comp\build\src\main_comp.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:03.39

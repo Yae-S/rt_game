@@ -1,0 +1,7 @@
+Nov 22 11:18:34.015 INFO: manager: 1.1.0
+Nov 22 11:18:34.015 INFO: manager: Copyright (C) 2003-2010
+Nov 22 11:18:34.015 INFO: manager:   Noriaki Ando
+Nov 22 11:18:34.015 INFO: manager:   Intelligent Systems Research Institute, AIST
+Nov 22 11:18:34.015 INFO: manager: Manager starting.
+Nov 22 11:18:34.015 INFO: manager: Starting local logging.
+Nov 22 11:18:36.051 INFO: NamingManager: NameServer connection failed: corba/localhost

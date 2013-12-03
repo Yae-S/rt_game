@@ -1,0 +1,8 @@
+C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/y10140/workspace/Main_comp/build/idl/CMakeFiles/ALL_IDL_TGT.dir
+C:/Users/y10140/workspace/Main_comp/build/idl/CMakeFiles/RecognitionService_TGT.dir
+C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/y10140/workspace/Main_comp/build/doc/CMakeFiles/doxygen_doc.dir
+C:/Users/y10140/workspace/Main_comp/build/src/CMakeFiles/main_comp.dir
+C:/Users/y10140/workspace/Main_comp/build/src/CMakeFiles/main_compcomp.dir
+C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/uninstall.dir

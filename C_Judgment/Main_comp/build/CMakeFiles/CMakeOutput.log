@@ -1,0 +1,186 @@
+The system is: Windows - 6.1 - x86
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec1516752887.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1008]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+2013/11/22 19:03:15 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec1516752887.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTryCompileExec1516752887.dir\Debug\" を作成しています。
+  ディレクトリ "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.unsuccessfulbuild" を作成しています。
+ClCompile:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1516752887.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1516752887.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\testCCompiler.c  /Zm1000 
+  Microsoft(R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1516752887.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1516752887.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\testCCompiler.c  /Zm1000 
+  
+  testCCompiler.c
+ManifestResourceCompile:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.embed.manifest.res" cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887_manifest.rc 
+Link:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1516752887.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1516752887.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1516752887.lib" /MACHINE:X86 cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.embed.manifest.res
+  cmTryCompileExec1516752887.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.embed.manifest" /manifest cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.intermediate.manifest
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.embed.manifest.res" cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887_manifest.rc 
+LinkEmbedManifest:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1516752887.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1516752887.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1516752887.lib" /MACHINE:X86 cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.exe.embed.manifest.res
+  cmTryCompileExec1516752887.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
+  cmTryCompileExec1516752887.vcxproj -> C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1516752887.exe
+FinalizeBuildStatus:
+  ファイル "cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.unsuccessfulbuild" を削除しています。
+  "cmTryCompileExec1516752887.dir\Debug\cmTryCompileExec1516752887.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec1516752887.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:03.74
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec2028606160.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1008]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+2013/11/22 19:03:19 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec2028606160.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTryCompileExec2028606160.dir\Debug\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.unsuccessfulbuild" を作成しています。
+ClCompile:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2028606160.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2028606160.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+  Microsoft(R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2028606160.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2028606160.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+  
+  CMakeCCompilerABI.c
+ManifestResourceCompile:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.embed.manifest.res" cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160_manifest.rc 
+Link:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2028606160.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2028606160.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2028606160.lib" /MACHINE:X86 cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.embed.manifest.res
+  cmTryCompileExec2028606160.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.embed.manifest" /manifest cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.intermediate.manifest
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.embed.manifest.res" cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160_manifest.rc 
+LinkEmbedManifest:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2028606160.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2028606160.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2028606160.lib" /MACHINE:X86 cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.exe.embed.manifest.res
+  cmTryCompileExec2028606160.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
+  cmTryCompileExec2028606160.vcxproj -> C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2028606160.exe
+FinalizeBuildStatus:
+  ファイル "cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.unsuccessfulbuild" を削除しています。
+  "cmTryCompileExec2028606160.dir\Debug\cmTryCompileExec2028606160.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec2028606160.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:01.03
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec3667836652.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1008]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+2013/11/22 19:03:20 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec3667836652.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTryCompileExec3667836652.dir\Debug\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.unsuccessfulbuild" を作成しています。
+ClCompile:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3667836652.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3667836652.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx  /Zm1000 
+  Microsoft(R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3667836652.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3667836652.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx  /Zm1000 
+  
+  testCXXCompiler.cxx
+ManifestResourceCompile:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.embed.manifest.res" cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652_manifest.rc 
+Link:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3667836652.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3667836652.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3667836652.lib" /MACHINE:X86 cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.embed.manifest.res
+  cmTryCompileExec3667836652.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.embed.manifest" /manifest cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.intermediate.manifest
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.embed.manifest.res" cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652_manifest.rc 
+LinkEmbedManifest:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3667836652.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3667836652.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3667836652.lib" /MACHINE:X86 cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.exe.embed.manifest.res
+  cmTryCompileExec3667836652.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
+  cmTryCompileExec3667836652.vcxproj -> C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3667836652.exe
+FinalizeBuildStatus:
+  ファイル "cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.unsuccessfulbuild" を削除しています。
+  "cmTryCompileExec3667836652.dir\Debug\cmTryCompileExec3667836652.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec3667836652.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:01.17
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec61084655.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1008]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+2013/11/22 19:03:22 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec61084655.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTryCompileExec61084655.dir\Debug\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.unsuccessfulbuild" を作成しています。
+ClCompile:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec61084655.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec61084655.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+  Microsoft(R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:opencv\build\include /IC:\opencv\build\include\opencv /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec61084655.dir\Debug\\" /Fd"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec61084655.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+  
+  CMakeCXXCompilerABI.cpp
+ManifestResourceCompile:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.embed.manifest.res" cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655_manifest.rc 
+Link:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec61084655.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec61084655.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec61084655.lib" /MACHINE:X86 cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.embed.manifest.res
+  cmTryCompileExec61084655.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.embed.manifest" /manifest cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.intermediate.manifest
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.embed.manifest.res" cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655_manifest.rc 
+LinkEmbedManifest:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec61084655.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec61084655.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/y10140/workspace/Main_comp/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec61084655.lib" /MACHINE:X86 cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.exe.embed.manifest.res
+  cmTryCompileExec61084655.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
+  cmTryCompileExec61084655.vcxproj -> C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec61084655.exe
+FinalizeBuildStatus:
+  ファイル "cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.unsuccessfulbuild" を削除しています。
+  "cmTryCompileExec61084655.dir\Debug\cmTryCompileExec61084655.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\y10140\workspace\Main_comp\build\CMakeFiles\CMakeTmp\cmTryCompileExec61084655.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:01.37
+
+
